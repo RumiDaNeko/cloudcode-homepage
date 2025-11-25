@@ -64,7 +64,7 @@ useEffect(() => {
       transition: 'backdrop-filter 0.5s ease, -webkit-backdrop-filter 0.5s ease'
     }}
   ></div>
-      <div id="menu" style={{ position: "fixed", top: 0, right: 0, width: "100%", height: '100vh', background: "transparent", zIndex: 9999, pointerEvents: "none" }}>
+      <div id="menu" style={{ position: "fixed", top: 0, right: 0, width: "100%", height: '100dvh', background: "transparent", zIndex: 9999, pointerEvents: "none" }}>
   <StaggeredMenu
     className={"neko"}
     position="right"
@@ -90,7 +90,7 @@ useEffect(() => {
     }}
   />
 </div>
-  <section id="hero1" style={{ width: '100%', height: "100vh", background: "#111"}}>
+  <section id="hero1" style={{ width: '100%', height: "100dvh", background: "#111"}}>
 <div style={{  width: '100%', height: "100%", position: 'absolute', backdropFilter: "blur(5px)", WebkitBackdropFilter: "blur(5px)" }}>
   <Beams
     beamWidth={3}
@@ -150,7 +150,7 @@ sequential={true}
 </SpotlightCard>
 </div>
 </section>
-  <section id="hero2" style={{ width: '100%', height: isSmall ? toosmall ? "105vh" : "105vh" : "105vh", background: "#000"}}>
+  <section id="hero2" style={{ position: "relative", width: '100%', height: isSmall ? toosmall ? "105dvh" : "105dvh" : "105dvh", background: "#000"}}>
 <GradualBlur
     target="parent"
     position="top"
@@ -174,7 +174,7 @@ sequential={true}
   className={ isSmall ? toosmall ? " overflow-y-visible text-15xl" : " overflow-y-visible text-10xl" : " text-5xl"}
   />
 
-  <div style={{ width: '100%',  height: "65vh", position: 'absolute', display: 'flex', justifyContent: 'center', alignItems: "center"}}>
+  <div style={{ width: '100%',  height: "65dvh", position: 'absolute', display: 'flex', justifyContent: 'center', alignItems: "center"}}>
 <SpotlightCard 
 spotlightColor="#000"
   className="bg-transparent border-transparent w-4/5"
@@ -193,13 +193,13 @@ Whether you’re starting small or scaling up, we’re here to make hosting empo
   pauseDuration={10000}
   showCursor={true}
   cursorCharacter="|"
-  className={ isSmall ? toosmall ? " overflow-y-visible text-xl" : " overflow-y-visible text-3xl" : " overflow-y-visible text-3xl"}
+  className={ isSmall ? toosmall ? "  text-xl" : "  text-3xl" : "  text-3xl"}
 />
   </div>
 </SpotlightCard>
 </div>
 </section>
-<section id="hero3" style={{ width: '100%', height: isSmall ? toosmall ? "105vh" : "105vh" : "105vh", background: "#000", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+<section id="hero3" style={{ position: "relative", width: '100%', height: isSmall ? toosmall ? "105dvh" : "105dvh" : "105dvh", background: "#000", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <Shuffle
   text="What we specialize in"
   shuffleDirection="right"
@@ -220,7 +220,7 @@ Whether you’re starting small or scaling up, we’re here to make hosting empo
   <FlowingMenu items={demoItems} />
 </div>
 </section>
-<section id="hero4" style={{ width: '100%', height: isSmall == true  ? "185vh" : "105vh", background: "#000", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+<section id="hero4" style={{ position: "relative", width: '100%', minHeight: isSmall == true  ? "185dvh" : "105dvh", height: "auto", background: "#000", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 
   <SplitText
   text="What our user say"
@@ -237,7 +237,7 @@ Whether you’re starting small or scaling up, we’re here to make hosting empo
   onLetterAnimationComplete={() =>{console.log("hi")}}
 />
   <div  style={{ height: "65%", width: "75%", display: "flex", flexDirection: isSmall == true  ? toosmall ? "column" : "column" : "row", gap:50, justifyContent:"space-evenly", alignItems:'center'}}>
-  <div className="cardbox" style={{background: '#000', height: isSmall == true  ? "1550px" : "40vh", width: "100%", display: "flex", flexDirection: isSmall == true  ? toosmall ? "column" : "column" : "row", gap:50, justifyContent:"space-evenly", alignItems:'center'}}>
+  <div className="cardbox" style={{background: '#000', height: isSmall == true  ? "1550px" : "40dvh", width: "100%", display: "flex", flexDirection: isSmall == true  ? toosmall ? "column" : "column" : "row", gap:50, justifyContent:"space-evenly", alignItems:'center'}}>
 
 <SpotlightCard className="card-content w-[350px]" spotlightColor="#ec8686">
     
@@ -309,26 +309,26 @@ Co-Founder @ Lormas Studio" delay={150} animateBy="words" direction="bottom" cla
 </div>
 </div>
 </section>
-<section id="footer" style={{ width: '100%', height: isSmall? toosmall? "125vh" : "75vh" : "35vh", background: "#1a1919ff", display: "flex", flexDirection: isSmall? "column" : "row", justifyContent:"center", alignItems:'center'}}>
-  <div style={{ width: '100%', height: "35vh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+<section id="footer" style={{ width: '100%', height: isSmall? toosmall? "125dvh" : "75dvh" : "35dvh", background: "#1a1919ff", display: "flex", flexDirection: isSmall? "column" : "row", justifyContent:"center", alignItems:'center'}}>
+  <div style={{ width: '100%', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <img className={isSmall? "mt-10  rounded-[200px]" : "mt-10 mr-25 rounded-[200px]"} style={{width:"50px", height:"50px"}} src="https://media.harumi.io.vn/cloudcode-bg.png"></img>
 <BlurText text="Cloudcode" delay={150} animateBy="words" direction="top" className="text-3xl mt-2 text-white"/>
 <BlurText text="© 2025 Cloudcode" delay={150} animateBy="words" direction="top" className="text-1xl mt-1 mr-2 text-gray-400"/>
   </div>
-  <div style={{ width: '75vw', height: "35vh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}></div>
-  <div className={isSmall? toosmall? "mt-10" : "mt-5 mb-10" : "ml-10 "} style={{ width: '15vw', height: "35vh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+  <div style={{ width: '75vw', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}></div>
+  <div className={isSmall? toosmall? "mt-10" : "mt-5 mb-10" : "ml-10 "} style={{ width: '15vw', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <BlurText text="Links" delay={150} animateBy="words" direction="top" className={isSmall? "text-3xl mt-2 text-white" : "text-xl mt-2 text-gray-200"}/>
 <BlurText text="Discord" delay={150} animateBy="words" direction="top" linkref="https://discord.gg/U7aFkZWk74" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
   <BlurText text="Github" delay={150} animateBy="words" direction="top" linkref="https://github.com/enterprises/cloudcode/organizations" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
   <BlurText text="Facebook" delay={150} animateBy="words" direction="top" linkref="https://www.facebook.com/profile.php?id=61563331380757" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
   </div>
-  <div className={isSmall? toosmall? "mt-10" : "mt-5 mb-10"  : "ml-10 "} style={{ width: '15vw', height: "35vh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+  <div className={isSmall? toosmall? "mt-10" : "mt-5 mb-10"  : "ml-10 "} style={{ width: '15vw', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <BlurText text="Company" delay={150} animateBy="words" direction="top" className={isSmall? "text-3xl mt-2 text-white" : "text-xl mt-2 text-gray-200"}/>
 <BlurText text="Contact" delay={150} animateBy="words" direction="top" linkref="https://discord.gg/U7aFkZWk74" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
 <BlurText text="Billing" delay={150} animateBy="words" direction="top" linkref="https://billing.cloudcode.site" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
 <BlurText text="Panel" delay={150} animateBy="words" direction="top" linkref="https://panel.cloudcode.site" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
   </div>
-  <div className={isSmall? toosmall? "mt-10 mb-10" : "mt-5 mb-10"  : "ml-10 mr-50"} style={{ width: '15vw', height: "35vh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+  <div className={isSmall? toosmall? "mt-10 mb-10" : "mt-5 mb-10"  : "ml-10 mr-50"} style={{ width: '15vw', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <BlurText text="Legal" delay={150} animateBy="words" direction="top" linkref="#" className={isSmall? "text-3xl mt-2 text-white" : "text-xl mt-2 text-white"}/>
   <BlurText text="Privacy" delay={150} animateBy="words" direction="top" linkref="/privacy" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
 <BlurText text="TOS" delay={150} animateBy="words" direction="top" linkref="/tos" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
