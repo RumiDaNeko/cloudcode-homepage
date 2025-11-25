@@ -16,6 +16,7 @@ import Galaxy from '@/components/Galaxy'
 import MaskCursorEffect from '@/components/mask-cursor-effect';
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
+  { label: 'Service', ariaLabel: 'Access the Billing Page', link: '/services' },
   { label: 'Billing', ariaLabel: 'Access the Billing Page', link: 'https://billing.cloudcode.site' },
   { label: 'Panel', ariaLabel: 'Access the panel', link: 'https://panel.cloudcode.site' },
 ];
