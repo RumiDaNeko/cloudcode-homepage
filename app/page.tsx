@@ -220,7 +220,7 @@ Whether you’re starting small or scaling up, we’re here to make hosting empo
   <FlowingMenu items={demoItems} />
 </div>
 </section>
-<section id="hero4" style={{ width: '100%', height: isSmall == true  ? "1650px" : "105vh", background: "#000", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+<section id="hero4" style={{ width: '100%', height: isSmall == true  ? "185vh" : "105vh", background: "#000", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 
   <SplitText
   text="What our user say"
