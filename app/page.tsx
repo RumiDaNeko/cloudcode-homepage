@@ -224,7 +224,7 @@ Whether you’re starting small or scaling up, we’re here to make hosting empo
 
   <SplitText
   text="What our user say"
-  className= {isSmall == true  ? "text-3xl mb-10 font-semibold text-center text-white" :"text-8xl font-semibold text-center text-white"}
+  className= {isSmall == true  ? "text-3xl font-semibold text-center text-white" :"text-8xl mb-10 font-semibold text-center text-white"}
   delay={100}
   duration={0.6}
   ease="power3.out"
@@ -236,7 +236,7 @@ Whether you’re starting small or scaling up, we’re here to make hosting empo
   textAlign="center"
   onLetterAnimationComplete={() =>{console.log("hi")}}
 />
-  <div  style={{ height: "65%", width: "75%", display: "flex", flexDirection: isSmall == true  ? toosmall ? "column" : "column" : "row", gap:50, justifyContent:"space-evenly", alignItems:'center'}}>
+  <div className={isSmall == true  ? " " : "mt-10"} style={{ height: "65%", width: "75%", display: "flex", flexDirection: isSmall == true  ? toosmall ? "column" : "column" : "row", gap:50, justifyContent:"space-evenly", alignItems:'center'}}>
   <div className="cardbox" style={{background: '#000', height: isSmall == true  ? "1550px" : "40dvh", width: "100%", display: "flex", flexDirection: isSmall == true  ? toosmall ? "column" : "column" : "row", gap:50, justifyContent:"space-evenly", alignItems:'center'}}>
 
 <SpotlightCard className="card-content w-[350px]" spotlightColor="#ec8686">
