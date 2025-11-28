@@ -309,13 +309,13 @@ Co-Founder @ Lormas Studio" delay={150} animateBy="words" direction="bottom" cla
 </div>
 </div>
 </section>
-<section id="footer" style={{ width: '100%', height: isSmall? toosmall? "125dvh" : "75dvh" : "35dvh", background: "#1a1919ff", display: "flex", flexDirection: isSmall? "column" : "row", justifyContent:"center", alignItems:'center'}}>
+<section id="footer" style={{ width: '100%', minHeight: isSmall? toosmall? "125dvh" : "75dvh" : "35dvh", height: "auto", background: "#1a1919ff", display: "flex", flexDirection: isSmall? "column" : "row", justifyContent:"center", alignItems:'center'}}>
   <div style={{ width: '100%', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <img className={isSmall? "mt-10  rounded-[200px]" : "mt-10 mr-25 rounded-[200px]"} style={{width:"50px", height:"50px"}} src="https://media.harumi.io.vn/cloudcode-bg.png"></img>
 <BlurText text="Cloudcode" delay={150} animateBy="words" direction="top" className="text-3xl mt-2 text-white"/>
 <BlurText text="© 2025 Cloudcode" delay={150} animateBy="words" direction="top" className="text-1xl mt-1 mr-2 text-gray-400"/>
   </div>
- <div className={isSmall? toosmall? "mt-10" : "mt-5 mb-10" : "ml-10 "} style={{ width: '15vw', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
+ <div className={isSmall? toosmall? "mt-5" : "mt-5 mb-10" : "ml-10 "} style={{ width: '15vw', height: "35dvh", display: "flex", flexDirection: "column", justifyContent:"center", alignItems:'center'}}>
 <BlurText text="Links" delay={150} animateBy="words" direction="top" className={isSmall? "text-3xl mt-2 text-white" : "text-xl mt-2 text-gray-200"}/>
 <BlurText text="Discord" delay={150} animateBy="words" direction="top" linkref="https://discord.gg/U7aFkZWk74" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
   <BlurText text="Github" delay={150} animateBy="words" direction="top" linkref="https://github.com/enterprises/cloudcode/organizations" className={isSmall? "text-3xl mt-2 text-gray-400" : "text-xl mt-2 text-gray-400"}/>
